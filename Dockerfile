@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -yq curl gnupg zip unzip ssh \
     && ln -s /usr/local/bin/composer.phar /usr/local/bin/composer \
     && curl -sL https://deb.nodesource.com/setup_8.x | bash \
     && apt update && apt-get install nodejs -yq \
-    && npm install -g npx \
+    && npm install -g npx webpack webpack-cli \
     && mkdir -p ~/.ssh && chmod 700 ~/.ssh
 
 CMD ["php", "-a"]
